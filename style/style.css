@@ -1,0 +1,641 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&family=Newsreader:ital,opsz,wght@0,6..72,200;0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;0,6..72,800;1,6..72,200;1,6..72,300;1,6..72,400;1,6..72,500;1,6..72,600;1,6..72,700;1,6..72,800&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+h1 {
+  font-family: "Newsreader";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 78px;
+  color: #0f437f;
+}
+
+h2 {
+  font-family: "Newsreader";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 49px;
+  color: #0f437f;
+}
+
+h3 {
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #0f437f;
+}
+
+h4 {
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #0f437f;
+}
+
+h5 {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #0f437f;
+}
+
+h6 {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0f437f;
+}
+
+p.large {
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 38px;
+  color: #62778f;
+}
+
+p {
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #62778f;
+}
+
+p.small {
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #62778f;
+}
+
+nav {
+  height: 10vh;
+  background-color: rgb(255, 255, 255);
+}
+nav .nav-cont {
+  max-width: 1280px;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .nav-cont .brand {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 29.2445px;
+  line-height: 30px;
+  color: #1e3d60;
+}
+nav .nav-cont ul {
+  list-style: none;
+}
+nav .nav-cont .nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .nav-cont .nav-links a {
+  text-decoration: none;
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #1e3d60;
+  margin-left: 40px;
+}
+nav .nav-cont .nav-links a:hover {
+  color: #f99d77;
+}
+
+.landing {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+.landing .blue-horz {
+  position: absolute;
+  height: 100%;
+  width: 30%;
+  background-color: #064ea4;
+  z-index: -3;
+  top: 0;
+  right: 0;
+}
+.landing .yellow {
+  position: absolute;
+  height: 440px;
+  width: 440px;
+  background-color: #fcdf69;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -3;
+  top: 0;
+  left: 0;
+}
+.landing .pastel {
+  position: absolute;
+  height: 440px;
+  width: 440px;
+  background-color: #f99d77;
+  border-radius: 50%;
+  transform: translate(50%, 50%);
+  z-index: -3;
+  bottom: 0;
+  right: 0;
+}
+.landing .landing-cont {
+  max-width: 1280px;
+  margin: auto;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.landing .landing-cont .landing-left {
+  width: 50%;
+}
+.landing .landing-cont .landing-left .content {
+  padding: 10px;
+}
+.landing .landing-cont .landing-left .content p {
+  margin: 24px 0;
+}
+.landing .landing-cont .landing-left .content .btn {
+  display: flex;
+  align-items: center;
+}
+.landing .landing-cont .landing-left .content .btn .btn-land {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 40px;
+  width: 249px;
+  height: 66px;
+  border-radius: 42px;
+  transition: all 0.3s ease-in-out;
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+}
+.landing .landing-cont .landing-left .content .btn .btn-prim {
+  background: #064ea4;
+  color: white;
+  margin-right: 20px;
+}
+.landing .landing-cont .landing-left .content .btn .btn-prim:hover {
+  background: #1e3d60;
+  transform: scale(0.98);
+}
+.landing .landing-cont .landing-left .content .btn .btn-sec {
+  width: 196px;
+  background: #e7eaee;
+  color: #1e3d60;
+}
+.landing .landing-cont .landing-left .content .btn .btn-sec:hover {
+  background: #8096b0;
+  transform: scale(0.98);
+}
+.landing .landing-cont .landing-right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.landing .landing-cont .landing-right img {
+  width: 80%;
+  border-radius: 14px;
+}
+
+.courses {
+  height: 100vh;
+  background-color: #f9fafb;
+}
+
+.why-us {
+  background: #1e3d60;
+  padding: 70px 0;
+  position: relative;
+}
+.why-us .arrow-down {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 60px;
+  transform: translateY(50%);
+}
+.why-us .why-us-cont {
+  max-width: 1280px;
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.why-us .why-us-cont .content {
+  padding: 50px 0;
+}
+.why-us .why-us-cont .content h2 {
+  font-family: "Newsreader";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 49px;
+  text-align: center;
+  color: white;
+  padding: 30px;
+}
+.why-us .why-us-cont .content .cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.why-us .why-us-cont .content .cards .card {
+  width: 28%;
+  text-align: center;
+}
+.why-us .why-us-cont .content .cards .card img {
+  width: 60%;
+}
+.why-us .why-us-cont .content .cards .card h4 {
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: white;
+  margin: 20px 0;
+}
+.why-us .why-us-cont .content .cards .card p {
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #e7eaee;
+}
+
+.about {
+  padding: 70px 0;
+}
+.about .about-cont {
+  max-width: 1280px;
+  width: 95%;
+  margin: auto;
+  padding: 40px 0;
+}
+.about .about-cont .content-header h2 {
+  font-family: "Newsreader";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 49px;
+  text-align: center;
+}
+.about .about-cont .content-header p {
+  width: 60%;
+  margin: auto;
+  padding: 10px 0;
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #62778f;
+}
+.about .about-cont .content-body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 0;
+}
+.about .about-cont .content-body .img-body {
+  width: 40%;
+  border-radius: 14px;
+}
+.about .about-cont .content-body .items {
+  width: 50%;
+  padding: 20px 0;
+}
+.about .about-cont .content-body .items .item {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.about .about-cont .content-body .items .item .item-content {
+  width: 80%;
+}
+.grow {
+  padding: 70px 0;
+  background: #064ea4;
+  overflow: hidden;
+  z-index: -2;
+}
+.grow .grow-cont {
+  max-width: 1280px;
+  width: 95%;
+  margin: auto;
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.grow .grow-cont .yellow {
+  position: absolute;
+  height: 350px;
+  width: 350px;
+  background-color: #fcdf69;
+  border-radius: 50%;
+  transform: translate(-80%, -80%);
+  top: 0;
+  left: 0;
+}
+.grow .grow-cont .light-blue {
+  position: absolute;
+  width: 330px;
+  height: 330px;
+  background: #e1edfb;
+  border-radius: 50%;
+  bottom: 0;
+  right: 50%;
+  transform: translate(20%, 100%);
+}
+.grow .grow-cont .left-content {
+  width: 50%;
+}
+.grow .grow-cont .left-content .inside {
+  width: 75%;
+  margin: auto;
+}
+.grow .grow-cont .left-content .inside h2 {
+  font-family: "Newsreader";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 49px;
+  color: #ffffff;
+}
+.grow .grow-cont .left-content .inside p {
+  color: #e7eaee;
+  padding: 20px 0;
+}
+.grow .grow-cont .left-content .inside .btn-grow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 40px;
+  background: #ffffff;
+  border-radius: 42px;
+  color: #0f437f;
+  font-weight: 700;
+  cursor: pointer;
+  width: 169px;
+  height: 18px;
+}
+.grow .grow-cont .left-content .inside .btn-grow:hover {
+  background: #8096b0;
+  transform: scale(0.98);
+}
+.grow .grow-cont .right-content {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 9;
+}
+.grow .grow-cont .right-content .pastel {
+  position: absolute;
+  width: 330px;
+  height: 330px;
+  background: #f99d77;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+}
+.grow .grow-cont .right-content .card {
+  background-color: white;
+  padding: 10px;
+  border-radius: 14px;
+  width: 200px;
+  margin: 10px;
+  text-align: center;
+  z-index: 1;
+}
+.grow .grow-cont .right-content .card p {
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #62778f;
+}
+
+.review {
+  background: #f9fafb;
+}
+.review .review-cont {
+  max-width: 1280px;
+  width: 95%;
+  margin: auto;
+  padding: 60px 0;
+}
+.review .review-cont h3 {
+  font-family: "Newsreader";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 49px;
+  text-align: center;
+  color: #0f437f;
+}
+.review .review-cont .review-cards {
+  padding: 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.review .review-cont .review-cards .card {
+  display: inline-block;
+  width: 600px;
+  background-color: white;
+  border-radius: 14px;
+  padding: 30px 20px;
+  margin: 10px 20px 10px 0;
+  box-shadow: 0 5px 15px hsla(0deg, 0%, 0%, 0.2);
+}
+.review .review-cont .review-cards .card .stars {
+  padding: 10px 5px;
+}
+.review .review-cont .review-cards .card .stars i {
+  font-size: 1.4rem;
+  color: gold;
+}
+.review .review-cont .review-cards .card p {
+  padding: 10px 0;
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #62778f;
+}
+.review .review-cont .review-cards .card .who h5 {
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #1e3d60;
+  padding: 10px 0;
+}
+.review .review-cont .review-cards .card .who p {
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: #62778f;
+  padding: 0px 0;
+}
+
+.browse {
+  padding: 70px 0;
+}
+.browse .browse-cont {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 30px;
+}
+.browse .browse-cont h2 {
+  text-align: center;
+  padding: 10px 0;
+  margin-bottom: 30px;
+}
+.browse .browse-cont .cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.browse .browse-cont .cards .card {
+  width: 31%;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px hsla(0deg, 0%, 0%, 0.2);
+}
+.browse .browse-cont .cards .card .light-blue {
+  background-color: #e1edfb;
+}
+.browse .browse-cont .cards .card .pastel {
+  background: #f99d77;
+}
+.browse .browse-cont .cards .card .yellow {
+  background: #fcdf69;
+}
+.browse .browse-cont .cards .card .image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 240px;
+}
+.browse .browse-cont .cards .card .image img {
+  width: 100px;
+}
+.browse .browse-cont .cards .card .content {
+  padding: 30px 30px;
+  margin-bottom: 10px;
+}
+.browse .browse-cont .cards .card .content h4 {
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height, or 150% */
+  /* Neutral/700 */
+  color: #1e3d60;
+}
+.browse .browse-cont .cards .card .content p {
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  /* or 167% */
+  /* Neutral/600 */
+  color: #62778f;
+}
+
+.footer {
+  background: #1e3d60;
+  padding: 70px 0;
+}
+.footer .footer-cont {
+  max-width: 1280px;
+  width: 95%;
+  margin: auto;
+}
+.footer .footer-cont .top {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer-cont .top .brand {
+  width: 40%;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32.4221px;
+  line-height: 33px;
+  color: #ffffff;
+}
+.footer .footer-cont .top p {
+  width: 40%;
+}
+.footer .footer-cont hr {
+  margin: 20px auto;
+  width: 80%;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}/*# sourceMappingURL=style.css.map */

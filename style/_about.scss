@@ -1,0 +1,68 @@
+.about {
+  padding: 70px 0;
+
+  .about-cont {
+    max-width: 1280px;
+    width: 95%;
+    margin: auto;
+    padding: 40px 0;
+
+    .content-header {
+      h2 {
+        font-family: "Newsreader";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 49px;
+        text-align: center;
+      }
+      p {
+        width: 60%;
+        margin: auto;
+        padding: 10px 0;
+        font-family: "Kumbh Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        color: #62778f;
+      }
+    }
+    .content-body {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 40px 0;
+
+      .img-body {
+        width: 40%;
+        // width: 50%;
+        border-radius: 14px;
+      }
+      .items {
+        width: 50%;
+        // display: flex;
+        // justify-content: space-around;
+        // align-items: center;
+        padding: 20px 0;
+
+        .item {
+          padding: 20px 0;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          img {
+          }
+          .item-content {
+            width: 80%;
+            h4 {
+            }
+            p {
+            }
+          }
+        }
+      }
+    }
+  }
+}

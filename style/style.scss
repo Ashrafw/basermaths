@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&family=Newsreader:ital,opsz,wght@0,6..72,200;0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;0,6..72,800;1,6..72,200;1,6..72,300;1,6..72,400;1,6..72,500;1,6..72,600;1,6..72,700;1,6..72,800&display=swap");
+
+// font-family: 'Kumbh Sans', sans-serif;
+// font-family: 'Newsreader', serif;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Kumbh Sans", sans-serif;
+}
+h1 {
+  font-family: "Newsreader";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 78px;
+  color: #0f437f;
+}
+h2 {
+  font-family: "Newsreader";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 49px;
+  color: #0f437f;
+}
+h3 {
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #0f437f;
+}
+
+h4 {
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #0f437f;
+}
+h5 {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #0f437f;
+}
+h6 {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0f437f;
+}
+p.large {
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 38px;
+  color: #62778f;
+}
+
+p {
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #62778f;
+}
+p.small {
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #62778f;
+}
+
+@import "nav";
+@import "landing";
+@import "courses";
+@import "whyus";
+@import "about";
+@import "grow";
+@import "review";
+@import "browse";
+@import "footer";

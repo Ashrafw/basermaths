@@ -1,0 +1,72 @@
+.browse {
+  padding: 70px 0;
+
+  .browse-cont {
+    max-width: 1280px;
+    margin: auto;
+    padding: 0 30px;
+    h2 {
+      text-align: center;
+      padding: 10px 0;
+      margin-bottom: 30px;
+    }
+    .cards {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .card {
+        width: 31%;
+        border-radius: 14px;
+        overflow: hidden;
+        box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.2);
+        .light-blue {
+          background-color: #e1edfb;
+        }
+        .pastel {
+          background: #f99d77;
+        }
+        .yellow {
+          background: #fcdf69;
+        }
+        .image {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 240px;
+          img {
+            width: 100px;
+          }
+        }
+        .content {
+          padding: 30px 30px;
+          margin-bottom: 10px;
+          h4 {
+            font-family: "Kumbh Sans";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 36px;
+            /* identical to box height, or 150% */
+
+            /* Neutral/700 */
+
+            color: #1e3d60;
+          }
+          p {
+            font-family: "Kumbh Sans";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            /* or 167% */
+
+            /* Neutral/600 */
+
+            color: #62778f;
+          }
+        }
+      }
+    }
+  }
+}

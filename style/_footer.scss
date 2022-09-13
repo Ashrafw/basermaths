@@ -1,0 +1,41 @@
+.footer {
+  background: #1e3d60;
+  padding: 70px 0;
+
+  .footer-cont {
+    max-width: 1280px;
+    width: 95%;
+    margin: auto;
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+      .brand {
+        width: 40%;
+        font-family: "DM Sans";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32.4221px;
+        line-height: 33px;
+        color: #ffffff;
+      }
+      p {
+        width: 40%;
+      }
+    }
+    hr {
+      margin: 20px auto;
+      width: 80%;
+      border: 0;
+      height: 1px;
+      background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0.75),
+        rgba(255, 255, 255, 0)
+      );
+    }
+    .bottom {
+    }
+  }
+}

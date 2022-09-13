@@ -1,0 +1,67 @@
+.why-us {
+  background: #1e3d60;
+  padding: 70px 0;
+  position: relative;
+  .arrow-down {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 60px;
+    transform: translateY(50%);
+  }
+  .why-us-cont {
+    max-width: 1280px;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .content {
+      padding: 50px 0;
+
+      h2 {
+        font-family: "Newsreader";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 49px;
+        text-align: center;
+        color: white;
+        padding: 30px;
+      }
+      .cards {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .card {
+          width: 28%;
+          text-align: center;
+          img {
+            width: 60%;
+          }
+
+          h4 {
+            font-family: "Kumbh Sans";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 36px;
+            text-align: center;
+            color: white;
+            margin: 20px 0;
+          }
+
+          p {
+            font-family: "Kumbh Sans";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            text-align: center;
+            color: #e7eaee;
+          }
+        }
+      }
+    }
+  }
+}

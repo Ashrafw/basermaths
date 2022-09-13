@@ -1,0 +1,120 @@
+.grow {
+  padding: 70px 0;
+  background: #064ea4;
+  overflow: hidden;
+  z-index: -2;
+  .grow-cont {
+    max-width: 1280px;
+    width: 95%;
+    margin: auto;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    // z-index: -8;
+
+    .yellow {
+      position: absolute;
+      height: 350px;
+      width: 350px;
+      background-color: #fcdf69;
+      border-radius: 50%;
+      transform: translate(-80%, -80%);
+      //   z-index: -3;
+      top: 0;
+      left: 0;
+    }
+
+    .light-blue {
+      position: absolute;
+      width: 330px;
+      height: 330px;
+      background: #e1edfb;
+      border-radius: 50%;
+      //   z-index: -1;
+      bottom: 0;
+      right: 50%;
+      transform: translate(20%, 100%);
+    }
+    .left-content {
+      width: 50%;
+      .inside {
+        width: 75%;
+        margin: auto;
+        h2 {
+          font-family: "Newsreader";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 38px;
+          line-height: 49px;
+          color: #ffffff;
+        }
+        p {
+          color: #e7eaee;
+          padding: 20px 0;
+        }
+        .btn-grow {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 24px 40px;
+          background: #ffffff;
+          border-radius: 42px;
+          color: #0f437f;
+          font-weight: 700;
+          cursor: pointer;
+          width: 169px;
+          height: 18px;
+          &:hover {
+            background: #8096b0;
+            transform: scale(0.98);
+          }
+        }
+      }
+    }
+    .right-content {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      position: relative;
+      z-index: 9;
+
+      .pastel {
+        position: absolute;
+        width: 330px;
+        height: 330px;
+        background: #f99d77;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        // z-index: ;
+        top: 50%;
+        left: 50%;
+        z-index: -1;
+      }
+      //   flex-direction: column;
+      //   flex-wrap: wrap;
+      .card {
+        background-color: white;
+        padding: 10px;
+        border-radius: 14px;
+        width: 200px;
+        margin: 10px;
+        text-align: center;
+        z-index: 1;
+
+        p {
+          font-family: "Kumbh Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 30px;
+          color: #62778f;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+nav {
+  // height: 94px;
+  height: 10vh;
+  background-color: rgb(255, 255, 255);
+
+  .nav-cont {
+    max-width: 1280px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .brand {
+      font-family: "DM Sans";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 29.2445px;
+      line-height: 30px;
+      color: #1e3d60;
+    }
+
+    ul {
+      list-style: none;
+    }
+    .nav-links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      a {
+        text-decoration: none;
+        font-family: "Kumbh Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 20px;
+        color: #1e3d60;
+        margin-left: 40px;
+        &:hover {
+          color: #f99d77;
+        }
+      }
+    }
+  }
+}
