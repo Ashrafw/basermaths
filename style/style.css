@@ -97,7 +97,9 @@ p.small {
 
 nav {
   height: 10vh;
+  min-height: 80px;
   background-color: rgb(255, 255, 255);
+  z-index: 99;
 }
 nav .nav-cont {
   max-width: 1280px;
@@ -111,7 +113,7 @@ nav .nav-cont .brand {
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 500;
-  font-size: 29.2445px;
+  font-size: 2.8rem;
   line-height: 30px;
   color: #1e3d60;
 }
@@ -834,7 +836,7 @@ nav .nav-cont .nav-links a:hover {
 
 .footer {
   background: #1e3d60;
-  padding: 70px 0;
+  padding: 70px 0 5px;
 }
 .footer .footer-cont {
   max-width: 1280px;

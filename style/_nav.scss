@@ -1,8 +1,9 @@
 nav {
   // height: 94px;
   height: 10vh;
+  min-height: 80px;
   background-color: rgb(255, 255, 255);
-
+  z-index: 99;
   .nav-cont {
     max-width: 1280px;
     margin: auto;
@@ -14,7 +15,7 @@ nav {
       font-family: "DM Sans";
       font-style: normal;
       font-weight: 500;
-      font-size: 29.2445px;
+      font-size: 2.8rem;
       line-height: 30px;
       color: #1e3d60;
     }
