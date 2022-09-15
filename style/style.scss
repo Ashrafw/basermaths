@@ -10,6 +10,7 @@
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body {
   font-family: "Kumbh Sans", sans-serif;
@@ -97,4 +98,5 @@ p.small {
 @import "grow";
 @import "review";
 @import "browse";
+@import "contact";
 @import "footer";

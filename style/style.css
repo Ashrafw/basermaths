@@ -7,6 +7,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -605,6 +606,230 @@ nav .nav-cont .nav-links a:hover {
   /* or 167% */
   /* Neutral/600 */
   color: #62778f;
+}
+
+.contact-us {
+  padding: 60px 0;
+  overflow: hidden;
+}
+.contact-us .contact-us-cont {
+  max-width: 1280px;
+  width: 95%;
+  margin: auto;
+  padding: 30px 0;
+  position: relative;
+}
+.contact-us .contact-us-cont .light-blue {
+  position: absolute;
+  height: 350px;
+  width: 350px;
+  background-color: #e1edfb;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+.contact-us .contact-us-cont .yellow {
+  position: absolute;
+  width: 410px;
+  height: 410px;
+  background: #fcdf69;
+  border-radius: 50%;
+  z-index: -1;
+  top: 30%;
+  right: 0;
+  transform: translate(30%, -30%);
+}
+.contact-us .contact-us-cont .pastel {
+  position: absolute;
+  height: 380px;
+  width: 380px;
+  background-color: #f99d77;
+  border-radius: 50%;
+  transform: translate(-50%, 50%);
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+}
+.contact-us .contact-us-cont .header {
+  margin: 40px;
+}
+.contact-us .contact-us-cont .contact-section {
+  margin: 40px;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact-us .contact-us-cont .contact-section .contact-form {
+  background-color: #ffffff;
+  width: 700px;
+  padding: 40px 40px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px hsla(0deg, 0%, 0%, 0.2);
+}
+.contact-us .contact-us-cont .contact-section .contact-form form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+}
+.contact-us .contact-us-cont .contact-section .contact-form form .items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  gap: 15px;
+}
+.contact-us .contact-us-cont .contact-section .contact-form form .items label {
+  display: flex;
+  flex-direction: column;
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #1e3d60;
+}
+.contact-us .contact-us-cont .contact-section .contact-form form .items label input {
+  margin: 10px 0;
+  background: #f9fafb;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: #62778f;
+  border: none;
+}
+.contact-us .contact-us-cont .contact-section .contact-form form .items label input::-moz-placeholder {
+  color: #62778f;
+  opacity: 0.5; /* Firefox */
+}
+.contact-us .contact-us-cont .contact-section .contact-form form .items label input:-ms-input-placeholder {
+  color: #62778f;
+  opacity: 0.5; /* Firefox */
+}
+.contact-us .contact-us-cont .contact-section .contact-form form .items label input::placeholder {
+  color: #62778f;
+  opacity: 0.5; /* Firefox */
+}
+.contact-us .contact-us-cont .contact-section .contact-form form .textarea {
+  width: 100%;
+}
+.contact-us .contact-us-cont .contact-section .contact-form form .textarea label {
+  display: flex;
+  flex-direction: column;
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #1e3d60;
+}
+.contact-us .contact-us-cont .contact-section .contact-form form .textarea label textarea {
+  border: none;
+  margin: 10px 0 0;
+  padding: 20px;
+  height: 200px;
+  background: #f9fafb;
+  border-radius: 20px;
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: #62778f;
+}
+.contact-us .contact-us-cont .contact-section .contact-form form .textarea label textarea::-moz-placeholder {
+  color: #62778f;
+  opacity: 0.5; /* Firefox */
+}
+.contact-us .contact-us-cont .contact-section .contact-form form .textarea label textarea:-ms-input-placeholder {
+  color: #62778f;
+  opacity: 0.5; /* Firefox */
+}
+.contact-us .contact-us-cont .contact-section .contact-form form .textarea label textarea::placeholder {
+  color: #62778f;
+  opacity: 0.5; /* Firefox */
+}
+.contact-us .contact-us-cont .contact-section .contact-form form button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 40px;
+  width: 147px;
+  background: #064ea4;
+  border-radius: 42px;
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  margin-right: 0;
+}
+.contact-us .contact-us-cont .contact-section .in-touch {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+.contact-us .contact-us-cont .contact-section .in-touch .card {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 16px;
+  background-color: white;
+  box-shadow: 0 5px 15px hsla(0deg, 0%, 0%, 0.2);
+  border-radius: 20px;
+}
+.contact-us .contact-us-cont .contact-section .in-touch .card h5 {
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  /* or 111% */
+  text-align: center;
+  /* Neutral/700 */
+  color: #1e3d60;
+}
+.contact-us .contact-us-cont .contact-section .in-touch .card p {
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  /* or 167% */
+  text-align: center;
+  /* Neutral/500 */
+  color: #8096b0;
+}
+.contact-us .contact-us-cont .contact-section .in-touch .card img {
+  width: 50px;
+}
+.contact-us .contact-us-cont .contact-section .in-touch .card .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e1edfb;
+  padding: 10px 10px;
+  border-radius: 50%;
+}
+.contact-us .contact-us-cont .contact-section .in-touch .card .image img {
+  width: 25px;
 }
 
 .footer {
