@@ -40,3 +40,67 @@
     }
   }
 }
+.newCard {
+  opacity: 0;
+}
+.active {
+  animation: anim1 1.5s forwards ease-out;
+  // background-color: yellowgreen;
+}
+
+.leftin {
+  animation: animLeft 2s forwards cubic-bezier(0.19, 1, 0.22, 1);
+}
+.pastel-one {
+  // transform: translateX(-100px);
+}
+// @keyframes animLeft {
+//   from {
+//     transform: translate(100%, 100%);
+//     // opacity: 0;
+//   }
+//   to {
+//     transform: translate(50%, 50%);
+//     // opacity: 1;
+//   }
+// }
+@keyframes anim1 {
+  from {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes movingLeftIn {
+  from {
+    transform: translateX(-60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes movingRightIn {
+  from {
+    transform: translateX(60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes movingTopIn {
+  from {
+    transform: translateY(-60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}

@@ -104,6 +104,7 @@ nav {
 nav .nav-cont {
   max-width: 1280px;
   margin: auto;
+  width: 95%;
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -865,4 +866,99 @@ nav .nav-cont .nav-links a:hover {
   border: 0;
   height: 1px;
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+.newCard {
+  opacity: 0;
+}
+
+.active {
+  -webkit-animation: anim1 1.5s forwards ease-out;
+          animation: anim1 1.5s forwards ease-out;
+}
+
+.leftin {
+  -webkit-animation: animLeft 2s forwards cubic-bezier(0.19, 1, 0.22, 1);
+          animation: animLeft 2s forwards cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@-webkit-keyframes anim1 {
+  from {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes anim1 {
+  from {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes movingLeftIn {
+  from {
+    transform: translateX(-60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes movingLeftIn {
+  from {
+    transform: translateX(-60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes movingRightIn {
+  from {
+    transform: translateX(60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes movingRightIn {
+  from {
+    transform: translateX(60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes movingTopIn {
+  from {
+    transform: translateY(-60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes movingTopIn {
+  from {
+    transform: translateY(-60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }/*# sourceMappingURL=style.css.map */
