@@ -246,6 +246,7 @@ nav .nav-cont .nav-links a:hover {
 .landing .landing-cont .landing-right img {
   width: 70%;
   border-radius: 14px;
+  height: 550px;
 }
 
 .mission {
@@ -284,8 +285,11 @@ nav .nav-cont .nav-links a:hover {
 .mission .mission-cont .cards .card .content {
   width: 90%;
 }
+.mission .mission-cont .cards .card .content h3 {
+  margin-bottom: 10px;
+}
 .mission .mission-cont .cards .card img {
-  width: 90%;
+  width: 400px;
   border-radius: 12px;
 }
 
@@ -1004,6 +1008,7 @@ nav .nav-cont .nav-links a:hover {
   width: 660px;
   border-radius: 14px;
   display: flex;
+  cursor: pointer;
   padding: 20px;
 }
 .faqs .faqs-cont .content .faq-cards .faq-card .faq-content p {
@@ -1026,28 +1031,14 @@ nav .nav-cont .nav-links a:hover {
   color: #e7eaee;
   display: none;
 }
-.faqs .faqs-cont .content .faq-cards .faq-card.active {
-  background-color: rgb(255, 255, 255);
-  width: 660px;
-  border-radius: 14px;
-  display: flex;
-  padding: 20px;
-}
 .faqs .faqs-cont .content .faq-cards .faq-card.active .faq-content p {
   display: block;
   height: 100%;
 }
-.faqs .faqs-cont .content .faq-cards .faq-card.active .icon i {
-  font-size: 1.6rem;
-  padding: 5px 15px 10px 15px;
-  cursor: pointer;
-}
 .faqs .faqs-cont .content .faq-cards .faq-card.active .icon .fa-circle-plus {
-  color: #064ea4;
   display: none;
 }
 .faqs .faqs-cont .content .faq-cards .faq-card.active .icon .fa-circle-minus {
-  color: #e7eaee;
   display: block;
 }
 

@@ -48,7 +48,7 @@
           width: 660px;
           border-radius: 14px;
           display: flex;
-
+          cursor: pointer;
           padding: 20px;
           .faq-content {
             p {
@@ -79,11 +79,6 @@
         }
 
         .faq-card.active {
-          background-color: rgb(255, 255, 255);
-          width: 660px;
-          border-radius: 14px;
-          display: flex;
-          padding: 20px;
           .faq-content {
             p {
               display: block;
@@ -92,17 +87,10 @@
             }
           }
           .icon {
-            i {
-              font-size: 1.6rem;
-              padding: 5px 15px 10px 15px;
-              cursor: pointer;
-            }
             .fa-circle-plus {
-              color: #064ea4;
               display: none;
             }
             .fa-circle-minus {
-              color: #e7eaee;
               display: block;
             }
           }
