@@ -1,8 +1,13 @@
 nav {
-  // height: 94px;
-  height: 10vh;
-  min-height: 80px;
-  background-color: rgb(255, 255, 255);
+  // height: 84px;
+  // height: 10vh;
+  // min-height: 80px;
+  position: fixed;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  background-color: #1e3d60;
   z-index: 99;
   .nav-cont {
     max-width: 1280px;
@@ -13,12 +18,13 @@ nav {
     justify-content: space-between;
     align-items: center;
     .brand {
+      line-height: 30px;
       font-family: "DM Sans";
       font-style: normal;
       font-weight: 500;
-      font-size: 2.8rem;
+      font-size: 2rem;
       line-height: 30px;
-      color: #1e3d60;
+      color: rgb(255, 255, 255);
     }
 
     ul {
@@ -35,7 +41,8 @@ nav {
         font-weight: 700;
         font-size: 18px;
         line-height: 20px;
-        color: #1e3d60;
+        // color: #1e3d60;
+        color: rgb(255, 255, 255);
         margin-left: 40px;
         &:hover {
           color: #f99d77;

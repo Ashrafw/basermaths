@@ -1,0 +1,80 @@
+.our-work {
+  background: #1e3d60;
+  padding: 70px 0;
+
+  .our-work-cont {
+    max-width: 1280px;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .content {
+      padding: 50px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      h2 {
+        font-family: "Newsreader";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 49px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        padding: 30px;
+      }
+      .p-head {
+        text-align: center;
+        font-family: "Kumbh Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        /* or 167% */
+        padding: 0 0 20px 0;
+        text-align: center;
+        width: 80%;
+        /* Neutral/300 */
+
+        color: #e7eaee;
+      }
+      .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        margin: 20px 0;
+        .card {
+          background: #f9fafb;
+          max-width: 380px;
+          padding: 20px;
+          border-radius: 14px;
+          //   text-align: center;
+
+          h4 {
+            font-family: "Kumbh Sans";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 36px;
+            // text-align: center;
+            color: rgb(0, 0, 0);
+            color: #1e3d60;
+            margin: 20px 0;
+          }
+
+          p {
+            font-family: "Kumbh Sans";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            // text-align: center;
+            color: #62778f;
+          }
+        }
+      }
+    }
+  }
+}
