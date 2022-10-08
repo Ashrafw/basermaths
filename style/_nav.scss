@@ -2,6 +2,8 @@ nav {
   // height: 84px;
   // height: 10vh;
   // min-height: 80px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23),
+    0 2px 4px rgba(255, 255, 255, 0.908);
   position: fixed;
   padding: 20px 0;
   margin-bottom: 20px;
@@ -12,6 +14,7 @@ nav {
   .nav-cont {
     max-width: 1280px;
     margin: auto;
+    // box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     width: 95%;
     height: 100%;
     display: flex;

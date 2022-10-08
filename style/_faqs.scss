@@ -1,0 +1,113 @@
+.faqs {
+  background: #f9fafb;
+  padding: 70px 0;
+
+  .faqs-cont {
+    max-width: 1280px;
+    width: 95%;
+    margin: auto;
+    .content {
+      text-align: center;
+
+      h2 {
+        font-family: "Newsreader";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 49px;
+        color: #0f437f;
+        padding: 20px;
+      }
+      p {
+        font-family: "Kumbh Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        /* or 167% */
+        padding: 10px;
+        text-align: center;
+        width: 60%;
+        /* Neutral/600 */
+        margin: auto;
+        color: #62778f;
+      }
+      // transition: all 0.5s linear;
+
+      .faq-cards {
+        margin: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        text-align: left;
+
+        .faq-card {
+          background-color: rgb(255, 255, 255);
+          width: 660px;
+          border-radius: 14px;
+          display: flex;
+
+          padding: 20px;
+          .faq-content {
+            p {
+              width: 100%;
+              display: none;
+              height: 0;
+              // transform: scale(0);
+              transition: height 2s ease-in-out;
+
+              text-align: left;
+            }
+          }
+          .icon {
+            i {
+              font-size: 1.6rem;
+              padding: 0 15px 10px 15px;
+              cursor: pointer;
+            }
+            .fa-circle-plus {
+              color: #064ea4;
+              display: block;
+            }
+            .fa-circle-minus {
+              color: #e7eaee;
+              display: none;
+            }
+          }
+        }
+
+        .faq-card.active {
+          background-color: rgb(255, 255, 255);
+          width: 660px;
+          border-radius: 14px;
+          display: flex;
+          padding: 20px;
+          .faq-content {
+            p {
+              display: block;
+              height: 100%;
+              // transform: scale(1);
+            }
+          }
+          .icon {
+            i {
+              font-size: 1.6rem;
+              padding: 5px 15px 10px 15px;
+              cursor: pointer;
+            }
+            .fa-circle-plus {
+              color: #064ea4;
+              display: none;
+            }
+            .fa-circle-minus {
+              color: #e7eaee;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}

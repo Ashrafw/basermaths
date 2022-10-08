@@ -43,10 +43,10 @@
 .newCard {
   opacity: 0;
 }
-.active {
-  animation: anim1 1.5s forwards ease-out;
-  // background-color: yellowgreen;
-}
+// .active {
+//   animation: anim1 1.5s forwards ease-out;
+//   // background-color: yellowgreen;
+// }
 
 .leftin {
   animation: animLeft 2s forwards cubic-bezier(0.19, 1, 0.22, 1);
@@ -54,16 +54,16 @@
 .pastel-one {
   // transform: translateX(-100px);
 }
-// @keyframes animLeft {
-//   from {
-//     transform: translate(100%, 100%);
-//     // opacity: 0;
-//   }
-//   to {
-//     transform: translate(50%, 50%);
-//     // opacity: 1;
-//   }
-// }
+@keyframes animLeft {
+  from {
+    transform: translate(100%, 100%);
+    // opacity: 0;
+  }
+  to {
+    transform: translate(50%, 50%);
+    // opacity: 1;
+  }
+}
 @keyframes anim1 {
   from {
     transform: translateY(-40px);

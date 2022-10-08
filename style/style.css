@@ -97,6 +97,7 @@ p.small {
 }
 
 nav {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23), 0 2px 4px rgba(255, 255, 255, 0.908);
   position: fixed;
   padding: 20px 0;
   margin-bottom: 20px;
@@ -954,6 +955,102 @@ nav .nav-cont .nav-links a:hover {
   width: 25px;
 }
 
+.faqs {
+  background: #f9fafb;
+  padding: 70px 0;
+}
+.faqs .faqs-cont {
+  max-width: 1280px;
+  width: 95%;
+  margin: auto;
+}
+.faqs .faqs-cont .content {
+  text-align: center;
+}
+.faqs .faqs-cont .content h2 {
+  font-family: "Newsreader";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 49px;
+  color: #0f437f;
+  padding: 20px;
+}
+.faqs .faqs-cont .content p {
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  /* or 167% */
+  padding: 10px;
+  text-align: center;
+  width: 60%;
+  /* Neutral/600 */
+  margin: auto;
+  color: #62778f;
+}
+.faqs .faqs-cont .content .faq-cards {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+}
+.faqs .faqs-cont .content .faq-cards .faq-card {
+  background-color: rgb(255, 255, 255);
+  width: 660px;
+  border-radius: 14px;
+  display: flex;
+  padding: 20px;
+}
+.faqs .faqs-cont .content .faq-cards .faq-card .faq-content p {
+  width: 100%;
+  display: none;
+  height: 0;
+  transition: height 2s ease-in-out;
+  text-align: left;
+}
+.faqs .faqs-cont .content .faq-cards .faq-card .icon i {
+  font-size: 1.6rem;
+  padding: 0 15px 10px 15px;
+  cursor: pointer;
+}
+.faqs .faqs-cont .content .faq-cards .faq-card .icon .fa-circle-plus {
+  color: #064ea4;
+  display: block;
+}
+.faqs .faqs-cont .content .faq-cards .faq-card .icon .fa-circle-minus {
+  color: #e7eaee;
+  display: none;
+}
+.faqs .faqs-cont .content .faq-cards .faq-card.active {
+  background-color: rgb(255, 255, 255);
+  width: 660px;
+  border-radius: 14px;
+  display: flex;
+  padding: 20px;
+}
+.faqs .faqs-cont .content .faq-cards .faq-card.active .faq-content p {
+  display: block;
+  height: 100%;
+}
+.faqs .faqs-cont .content .faq-cards .faq-card.active .icon i {
+  font-size: 1.6rem;
+  padding: 5px 15px 10px 15px;
+  cursor: pointer;
+}
+.faqs .faqs-cont .content .faq-cards .faq-card.active .icon .fa-circle-plus {
+  color: #064ea4;
+  display: none;
+}
+.faqs .faqs-cont .content .faq-cards .faq-card.active .icon .fa-circle-minus {
+  color: #e7eaee;
+  display: block;
+}
+
 .footer {
   background: #1e3d60;
   padding: 70px 0 5px;
@@ -990,16 +1087,28 @@ nav .nav-cont .nav-links a:hover {
   opacity: 0;
 }
 
-.active {
-  -webkit-animation: anim1 1.5s forwards ease-out;
-          animation: anim1 1.5s forwards ease-out;
-}
-
 .leftin {
   -webkit-animation: animLeft 2s forwards cubic-bezier(0.19, 1, 0.22, 1);
           animation: animLeft 2s forwards cubic-bezier(0.19, 1, 0.22, 1);
 }
 
+@-webkit-keyframes animLeft {
+  from {
+    transform: translate(100%, 100%);
+  }
+  to {
+    transform: translate(50%, 50%);
+  }
+}
+
+@keyframes animLeft {
+  from {
+    transform: translate(100%, 100%);
+  }
+  to {
+    transform: translate(50%, 50%);
+  }
+}
 @-webkit-keyframes anim1 {
   from {
     transform: translateY(-40px);
@@ -1010,7 +1119,6 @@ nav .nav-cont .nav-links a:hover {
     opacity: 1;
   }
 }
-
 @keyframes anim1 {
   from {
     transform: translateY(-40px);
