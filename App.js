@@ -7,7 +7,25 @@
 // const options = { threshold: 0 };
 
 // console.log(pastelOne);
+const scrollDemo = document.querySelector(".bodymain");
+const nav = document.querySelector(".nav");
+console.log("scrollDemo.scrollTop", scrollDemo.scrollTop);
+if (scrollDemo.scrollTop < 20) {
+  nav.style.background = "rgba(30, 61, 96,01)";
+} else {
+  nav.style.background = "rgb(30, 61, 96)";
+}
+nav.addEventListener(
+  "scroll",
+  () => {
+    console.log("scrollDemo.scrollTop", scrollDemo.scrollTop);
 
+    console.log("scrollDemo.scrollTop", scrollDemo.scrollTop);
+  },
+  true
+  // { passive: true }
+);
+nav.addEventListener("scroll", console.log("scrolled"));
 // const observer = new IntersectionObserver((entries) => {
 //   entries.forEach((entry) => {
 //     console.log(entry.target.classList);

@@ -2,7 +2,9 @@
   position: relative;
   height: 100vh;
   width: 100%;
-  padding: 90px 0 30px;
+  padding: 140px 0 30px;
+  background: #f9fafb;
+  z-index: 1;
   .arrow {
     position: absolute;
     transform: translate(-50%, 50%);
@@ -33,6 +35,17 @@
     bottom: 0;
     left: 0;
   }
+  .blue {
+    position: absolute;
+    height: 440px;
+    width: 440px;
+    background-color: #e1edfb;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -3;
+    top: 0;
+    left: 0%;
+  }
   .landing-cont {
     max-width: 1280px;
     margin: auto;
@@ -41,6 +54,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 50px;
     .landing-left {
       width: 50%;
       .content {

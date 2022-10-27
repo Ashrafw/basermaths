@@ -5,11 +5,11 @@ nav {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23),
     0 2px 4px rgba(255, 255, 255, 0.908);
   position: fixed;
-  padding: 20px 0;
+  padding: 30px 0;
   margin-bottom: 20px;
   width: 100%;
   color: rgb(255, 255, 255);
-  background-color: #1e3d60;
+  background-color: rgb(30, 61, 96);
   z-index: 99;
   .nav-cont {
     max-width: 1280px;
@@ -24,10 +24,13 @@ nav {
       line-height: 30px;
       font-family: "DM Sans";
       font-style: normal;
-      font-weight: 500;
-      font-size: 2rem;
+      font-weight: 900;
+      font-size: 2.2rem;
       line-height: 30px;
       color: rgb(255, 255, 255);
+      span {
+        font-weight: 100;
+      }
     }
 
     ul {
