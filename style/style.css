@@ -104,7 +104,7 @@ nav {
   width: 100%;
   color: rgb(255, 255, 255);
   background-color: rgb(30, 61, 96);
-  z-index: 99;
+  z-index: 9999999;
 }
 nav .nav-cont {
   max-width: 1280px;
@@ -485,23 +485,39 @@ nav .nav-cont .nav-links a:hover {
 }
 .about .about-cont .content-body {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   padding: 40px 0;
-}
-.about .about-cont .content-body .img-body {
-  width: 40%;
-  border-radius: 14px;
+  margin: auto;
 }
 .about .about-cont .content-body .items {
-  width: 50%;
   padding: 20px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
 }
 .about .about-cont .content-body .items .item {
-  padding: 20px 0;
+  padding: 20px 10px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
+}
+.about .about-cont .content-body .items .item img {
+  margin-right: 10px;
+}
+.about .about-cont .content-body .items .item i {
+  margin-right: 10px;
+  height: 60px;
+  width: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  background-color: #1e3d60;
+  color: linear-gradient(180deg, #1e3d60, #054ea4);
+  color: rgb(255, 255, 255);
+  border-radius: 1000px;
 }
 .about .about-cont .content-body .items .item .item-content {
   width: 80%;
@@ -643,10 +659,10 @@ nav .nav-cont .nav-links a:hover {
 }
 .review .review-cont .review-cards .card {
   display: inline-block;
-  width: 600px;
+  width: 550px;
   background-color: white;
   border-radius: 14px;
-  padding: 30px 20px;
+  padding: 30px 20px 30px 30px;
   margin: 10px 20px 10px 0;
   box-shadow: 0 5px 15px hsla(0deg, 0%, 0%, 0.2);
 }
@@ -715,7 +731,7 @@ nav .nav-cont .nav-links a:hover {
   background-color: #f99d77;
 }
 .browse .browse-cont .cards .card {
-  width: 31%;
+  width: 32%;
   border-radius: 14px;
   overflow: hidden;
   box-shadow: 0 1px 3px hsla(0deg, 0%, 0%, 0.2);
@@ -739,13 +755,14 @@ nav .nav-cont .nav-links a:hover {
   width: 100px;
 }
 .browse .browse-cont .cards .card .content {
-  padding: 0px 30px 25px;
+  text-align: center;
+  padding: 0px 10px 25px;
 }
 .browse .browse-cont .cards .card .content h4 {
   font-family: "Kumbh Sans";
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 36px;
   /* identical to box height, or 150% */
   /* Neutral/700 */
