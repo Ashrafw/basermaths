@@ -1161,6 +1161,16 @@ nav .nav-cont .nav-links a:hover {
   font-size: 32.4221px;
   line-height: 33px;
   color: #ffffff;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2.2rem;
+  line-height: 30px;
+  color: rgb(255, 255, 255);
+}
+.footer .footer-cont .top .brand span {
+  font-size: 2.16rem;
+  font-weight: 100;
 }
 .footer .footer-cont .top p {
   width: 40%;
@@ -1172,6 +1182,30 @@ nav .nav-cont .nav-links a:hover {
   height: 1px;
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
 }
+.footer .footer-cont .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.footer .footer-cont .bottom p {
+  font-size: 1.2rem;
+}
+.footer .footer-cont .bottom .socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footer-cont .bottom .socials i {
+  font-size: 1.4rem;
+  padding: 9px;
+  background: #62778f;
+  border-radius: 100px;
+  color: #f9fafb;
+  margin-left: 14px;
+  cursor: pointer;
+}
+
 .newCard {
   opacity: 0;
 }
