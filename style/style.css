@@ -522,6 +522,51 @@ nav .nav-cont .nav-links a:hover {
 .about .about-cont .content-body .items .item .item-content {
   width: 80%;
 }
+.prices {
+  padding: 70px 0;
+  background: #1e3d60;
+}
+.prices .prices-cont {
+  max-width: 1280px;
+  width: 95%;
+  margin: auto;
+  padding: 40px 0;
+}
+.prices .prices-cont .prices-inner h2 {
+  text-align: center;
+  padding: 0 0 30px;
+  color: rgb(255, 255, 255);
+}
+.prices .prices-cont .prices-inner .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
+}
+.prices .prices-cont .prices-inner .cards .card {
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 5px 15px hsla(0deg, 0%, 0%, 0.2);
+  background-color: rgb(255, 255, 255);
+}
+.prices .prices-cont .prices-inner .cards .card h3 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+.prices .prices-cont .prices-inner .cards .card .sub-content {
+  background: whitesmoke;
+  box-shadow: 0 5px 15px hsla(0deg, 0%, 0%, 0.2);
+  padding: 20px 0;
+  border-radius: 12px;
+}
+.prices .prices-cont .prices-inner .cards .card .sub-content p {
+  font-size: 1.2rem;
+}
+.prices .prices-cont .prices-inner .cards .card .sub-content h4 {
+  font-size: 2rem;
+  padding: 20px 0;
+}
+
 .grow {
   padding: 70px 0;
   background: #064ea4;

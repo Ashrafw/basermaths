@@ -1,0 +1,52 @@
+.prices {
+  padding: 70px 0;
+  background: #1e3d60;
+  .prices-cont {
+    max-width: 1280px;
+    width: 95%;
+    margin: auto;
+    padding: 40px 0;
+    .prices-inner {
+      h2 {
+        text-align: center;
+        padding: 0 0 30px;
+        color: rgb(255, 255, 255);
+      }
+      .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        // justify-content: space-around;
+        // align-items: center;
+        gap: 60px;
+        .card {
+          padding: 30px;
+          border-radius: 12px;
+          text-align: center;
+          box-shadow: 0 5px 15px hsla(0, 0%, 0%, 0.2);
+          background-color: rgb(255, 255, 255);
+          h3 {
+            // color: rgb(255, 255, 255);
+            font-size: 2rem;
+            margin-bottom: 30px;
+          }
+          .sub-content {
+            background: whitesmoke;
+            box-shadow: 0 5px 15px hsla(0, 0%, 0%, 0.2);
+
+            padding: 20px 0;
+            border-radius: 12px;
+            p {
+              font-size: 1.2rem;
+              //   color: rgb(255, 255, 255);
+            }
+            h4 {
+              font-size: 2rem;
+              padding: 20px 0;
+              //   color: rgb(255, 255, 255);
+            }
+          }
+        }
+      }
+    }
+  }
+}
