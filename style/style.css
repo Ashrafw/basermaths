@@ -525,6 +525,14 @@ nav .nav-cont .nav-links a:hover {
 .prices {
   padding: 70px 0;
   background: #1e3d60;
+  position: relative;
+}
+.prices .arrow-down {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 60px;
+  transform: translateY(50%);
 }
 .prices .prices-cont {
   max-width: 1280px;
@@ -679,6 +687,7 @@ nav .nav-cont .nav-links a:hover {
 
 .review {
   background: #f9fafb;
+  padding: 70px 0;
 }
 .review .review-cont {
   max-width: 1280px;
