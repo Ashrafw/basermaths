@@ -56,12 +56,13 @@
     align-items: center;
     padding-bottom: 50px;
     .landing-left {
-      width: 50%;
+      width: 60%;
+      padding-bottom: 40px;
       .content {
         padding: 10px;
 
         p {
-          margin: 24px 0;
+          margin: 22px 0 30px;
         }
 
         .btn {
@@ -69,13 +70,14 @@
           // justify-content: space-between;
           align-items: center;
           .btn-land {
+            text-decoration: none;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 24px 40px;
-            width: 249px;
-            height: 66px;
+            padding: 20px 30px;
+            min-width: 190px;
+            // height: 66px;
             border-radius: 42px;
             transition: all 0.3s ease-in-out;
             font-family: "Kumbh Sans";
@@ -94,7 +96,7 @@
             }
           }
           .btn-sec {
-            width: 196px;
+            // width: 196px;
             background: #e7eaee;
             color: #1e3d60;
             &:hover {
@@ -106,14 +108,21 @@
       }
     }
     .landing-right {
-      width: 50%;
+      width: 40%;
       display: flex;
       align-items: center;
       justify-content: center;
+      padding: 10px;
       img {
-        width: 70%;
+        // background: rgb(30, 61, 96);
+
+        width: 100%;
         border-radius: 14px;
-        height: 550px;
+        transform: rotate(12deg);
+        box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.2);
+        box-shadow: 0 1px 3px rgba(30, 61, 96, 0.12),
+          0 1px 2px rgba(30, 61, 96, 0.24);
+        // height: 550px;
       }
     }
   }

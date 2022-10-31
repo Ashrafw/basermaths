@@ -208,26 +208,27 @@ nav .nav-cont .nav-links a:hover {
   padding-bottom: 50px;
 }
 .landing .landing-cont .landing-left {
-  width: 50%;
+  width: 60%;
+  padding-bottom: 40px;
 }
 .landing .landing-cont .landing-left .content {
   padding: 10px;
 }
 .landing .landing-cont .landing-left .content p {
-  margin: 24px 0;
+  margin: 22px 0 30px;
 }
 .landing .landing-cont .landing-left .content .btn {
   display: flex;
   align-items: center;
 }
 .landing .landing-cont .landing-left .content .btn .btn-land {
+  text-decoration: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 24px 40px;
-  width: 249px;
-  height: 66px;
+  padding: 20px 30px;
+  min-width: 190px;
   border-radius: 42px;
   transition: all 0.3s ease-in-out;
   font-family: "Kumbh Sans";
@@ -246,7 +247,6 @@ nav .nav-cont .nav-links a:hover {
   transform: scale(0.98);
 }
 .landing .landing-cont .landing-left .content .btn .btn-sec {
-  width: 196px;
   background: #e7eaee;
   color: #1e3d60;
 }
@@ -255,15 +255,18 @@ nav .nav-cont .nav-links a:hover {
   transform: scale(0.98);
 }
 .landing .landing-cont .landing-right {
-  width: 50%;
+  width: 40%;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10px;
 }
 .landing .landing-cont .landing-right img {
-  width: 70%;
+  width: 100%;
   border-radius: 14px;
-  height: 550px;
+  transform: rotate(12deg);
+  box-shadow: 0 1px 3px hsla(0deg, 0%, 0%, 0.2);
+  box-shadow: 0 1px 3px rgba(30, 61, 96, 0.12), 0 1px 2px rgba(30, 61, 96, 0.24);
 }
 
 .mission {
@@ -759,7 +762,7 @@ nav .nav-cont .nav-links a:hover {
   padding: 10px 0;
   position: relative;
   z-index: 99;
-  top: -140px;
+  top: -100px;
 }
 .browse .browse-cont {
   max-width: 1280px;
@@ -878,18 +881,23 @@ nav .nav-cont .nav-links a:hover {
   left: 0;
 }
 .contact-us .contact-us-cont .header {
-  margin: 40px;
+  margin: 40px 40px 0px;
+}
+.contact-us .contact-us-cont .header h2 {
+  margin: 30px 0 0px;
+  font-size: 2rem;
 }
 .contact-us .contact-us-cont .contact-section {
-  margin: 40px;
+  margin: 20px 40px;
   z-index: 9;
+  gap: 90px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .contact-us .contact-us-cont .contact-section .contact-form {
   background-color: #ffffff;
-  width: 700px;
+  width: 100%;
   padding: 40px 40px;
   border-radius: 20px;
   box-shadow: 0 5px 15px hsla(0deg, 0%, 0%, 0.2);
@@ -905,7 +913,7 @@ nav .nav-cont .nav-links a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
-  gap: 15px;
+  gap: 20px 35px;
 }
 .contact-us .contact-us-cont .contact-section .contact-form form .items label {
   display: flex;
@@ -920,8 +928,9 @@ nav .nav-cont .nav-links a:hover {
 .contact-us .contact-us-cont .contact-section .contact-form form .items label input {
   margin: 10px 0;
   background: #f9fafb;
-  border-radius: 20px;
+  border-radius: 14px;
   padding: 10px 20px;
+  box-shadow: 0 1px 3px hsla(0deg, 0%, 0%, 0.2);
   font-weight: 400;
   font-size: 18px;
   line-height: 20px;
@@ -940,6 +949,37 @@ nav .nav-cont .nav-links a:hover {
   color: #62778f;
   opacity: 0.5; /* Firefox */
 }
+.contact-us .contact-us-cont .contact-section .contact-form form .items label select {
+  box-shadow: 0 1px 3px hsla(0deg, 0%, 0%, 0.2);
+  margin: 10px 0;
+  background: #f9fafb;
+  border-radius: 14px;
+  padding: 10px 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: #62778f;
+  border: none;
+}
+.contact-us .contact-us-cont .contact-section .contact-form form .items label select option {
+  font-size: 1px;
+  background: #62778f;
+}
+.contact-us .contact-us-cont .contact-section .contact-form form .items label select::-moz-placeholder {
+  font-size: 18px;
+  color: #62778f;
+  opacity: 0.5; /* Firefox */
+}
+.contact-us .contact-us-cont .contact-section .contact-form form .items label select:-ms-input-placeholder {
+  font-size: 18px;
+  color: #62778f;
+  opacity: 0.5; /* Firefox */
+}
+.contact-us .contact-us-cont .contact-section .contact-form form .items label select::placeholder {
+  font-size: 18px;
+  color: #62778f;
+  opacity: 0.5; /* Firefox */
+}
 .contact-us .contact-us-cont .contact-section .contact-form form .textarea {
   width: 100%;
 }
@@ -954,12 +994,13 @@ nav .nav-cont .nav-links a:hover {
   color: #1e3d60;
 }
 .contact-us .contact-us-cont .contact-section .contact-form form .textarea label textarea {
+  box-shadow: 0 1px 3px hsla(0deg, 0%, 0%, 0.2);
   border: none;
   margin: 10px 0 0;
   padding: 20px;
   height: 200px;
   background: #f9fafb;
-  border-radius: 20px;
+  border-radius: 14px;
   font-family: "Kumbh Sans";
   font-style: normal;
   font-weight: 400;
@@ -1017,7 +1058,7 @@ nav .nav-cont .nav-links a:hover {
   padding: 20px 16px;
   background-color: white;
   box-shadow: 0 5px 15px hsla(0deg, 0%, 0%, 0.2);
-  border-radius: 20px;
+  border-radius: 14px;
 }
 .contact-us .contact-us-cont .contact-section .in-touch .card h5 {
   font-family: "Kumbh Sans";
