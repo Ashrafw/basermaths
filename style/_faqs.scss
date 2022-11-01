@@ -44,6 +44,8 @@
         text-align: left;
 
         .faq-card {
+          box-shadow: 0 5px 15px hsla(0, 0%, 0%, 0.2);
+
           background-color: rgb(255, 255, 255);
           width: 660px;
           border-radius: 14px;
@@ -92,6 +94,211 @@
             }
             .fa-circle-minus {
               display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .faqs {
+    background: #f9fafb;
+    padding: 70px 0;
+
+    .faqs-cont {
+      max-width: 1280px;
+      width: 95%;
+      margin: auto;
+      .content {
+        text-align: center;
+
+        h2 {
+          font-family: "Newsreader";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 2rem;
+          line-height: 49px;
+          color: #0f437f;
+          padding: 20px 10px 20px;
+        }
+        p {
+          font-size: 18px;
+          line-height: 30px;
+          /* or 167% */
+          padding: 10px;
+          text-align: center;
+          width: 90%;
+          /* Neutral/600 */
+          margin: auto;
+          color: #62778f;
+        }
+        // transition: all 0.5s linear;
+
+        .faq-cards {
+          // margin: 20px 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          gap: 30px;
+          text-align: left;
+
+          .faq-card {
+            background-color: rgb(255, 255, 255);
+            // width: 660px;
+            width: 85%;
+            border-radius: 14px;
+            display: flex;
+            cursor: pointer;
+            padding: 15px;
+            // margin-bottom: 20px;
+            .faq-content {
+              p {
+                width: 100%;
+                display: none;
+                height: 0;
+                // transform: scale(0);
+                transition: height 2s ease-in-out;
+
+                text-align: left;
+              }
+            }
+            .icon {
+              i {
+                font-size: 1.6rem;
+                padding: 0 15px 10px 15px;
+                cursor: pointer;
+              }
+              .fa-circle-plus {
+                display: block;
+              }
+              .fa-circle-minus {
+                display: none;
+              }
+            }
+          }
+
+          .faq-card.active {
+            .faq-content {
+              p {
+                display: block;
+                height: 100%;
+                // transform: scale(1);
+              }
+            }
+            .icon {
+              .fa-circle-plus {
+                display: none;
+              }
+              .fa-circle-minus {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .faqs {
+    background: #f9fafb;
+    padding: 70px 0;
+
+    .faqs-cont {
+      max-width: 1280px;
+      width: 95%;
+      margin: auto;
+      .content {
+        text-align: center;
+
+        h2 {
+          font-family: "Newsreader";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 2rem;
+          line-height: 49px;
+          color: #0f437f;
+          padding: 20px 10px 20px;
+        }
+        p {
+          font-size: 18px;
+          line-height: 30px;
+          /* or 167% */
+          padding: 10px;
+          text-align: center;
+          width: 90%;
+          /* Neutral/600 */
+          margin: auto;
+          color: #62778f;
+        }
+        // transition: all 0.5s linear;
+
+        .faq-cards {
+          // margin: 20px 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          gap: 30px;
+          text-align: left;
+
+          .faq-card {
+            background-color: rgb(255, 255, 255);
+            // width: 660px;
+            width: 85%;
+            border-radius: 14px;
+            display: flex;
+            cursor: pointer;
+            padding: 15px;
+            // margin-bottom: 20px;
+            .faq-content {
+              p {
+                width: 100%;
+                display: none;
+                height: 0;
+                // transform: scale(0);
+                transition: height 2s ease-in-out;
+                font-size: 1rem;
+                text-align: left;
+              }
+              h4 {
+                font-size: 1.1rem;
+              }
+            }
+            .icon {
+              i {
+                font-size: 1.4rem;
+                padding: 4px 15px 10px 5px;
+                cursor: pointer;
+              }
+              .fa-circle-plus {
+                display: block;
+              }
+              .fa-circle-minus {
+                display: none;
+              }
+            }
+          }
+
+          .faq-card.active {
+            .faq-content {
+              p {
+                display: block;
+                height: 100%;
+                // transform: scale(1);
+              }
+            }
+            .icon {
+              .fa-circle-plus {
+                display: none;
+              }
+              .fa-circle-minus {
+                display: block;
+              }
             }
           }
         }

@@ -3,6 +3,14 @@
 // const cardOne = document.querySelector(".card-one");
 // const cardTwo = document.querySelector(".card-two");
 // const cardThree = document.querySelector(".card-three");
+const email = document.querySelector(".submit-message");
+const number = document.querySelector(".submit-message");
+const firstName = document.querySelector(".submit-message");
+const lastName = document.querySelector(".submit-message");
+const subject = document.querySelector(".submit-message");
+const yearGroup = document.querySelector(".submit-message");
+const message = document.querySelector(".submit-message");
+const submitMessageBtn = document.querySelector(".submit-message");
 
 // const options = { threshold: 0 };
 
@@ -38,6 +46,28 @@ nav.addEventListener("scroll", console.log("scrolled"));
 // cards.forEach((card) => {
 //   observer.observe(card);
 // });
+// submitMessageBtn.addEventListener("click", postMessage());
+
+// function postMessage() {
+//   let data = [{
+//     message: ''
+//   }]
+//   data: {
+//         name: "FormSubmit",
+//         message: "I'm from Devro LABS"
+//     }
+//   fetch("https://formsubmit.co/ashrafweheliye@gmail.com", {
+//     method: "POST",
+//     headers: { "Content-Type": "application/json" },
+//     data: {
+//         name: "FormSubmit",
+//         message: "I'm from Devro LABS"
+//     }
+//     // body: JSON.stringify(data),
+//   }).then((res) => {
+//     console.log("Request complete! response:", res);
+//   });
+// }
 
 const toggleBtn = document.querySelectorAll(".faq-card");
 

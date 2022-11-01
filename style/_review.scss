@@ -25,7 +25,7 @@
 
       .card {
         display: inline-block;
-        width: 550px;
+        width: 520px;
         background-color: white;
         border-radius: 14px;
         padding: 30px 20px 30px 30px;
@@ -71,6 +71,68 @@
             line-height: 20px;
             color: #62778f;
             padding: 0px 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1150px) {
+  .review {
+    padding: 70px 0;
+
+    .review-cont {
+      max-width: 1280px;
+      width: 95%;
+      margin: auto;
+      padding: 20px 0;
+      h3 {
+        font-size: 38px;
+      }
+      .review-cards {
+        padding: 30px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+
+        .card {
+          // display: inline-block;
+          width: 348px;
+          background-color: white;
+          border-radius: 14px;
+          padding: 20px 10px 20px 20px;
+          margin: 10px 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .stars {
+            padding: 10px 5px;
+
+            i {
+              font-size: 1.4rem;
+              color: gold;
+            }
+          }
+
+          p {
+            padding: 10px 0;
+
+            font-size: 16px;
+          }
+          .who {
+            h5 {
+              font-size: 18px;
+
+              padding: 10px 0;
+            }
+            p {
+              font-size: 18px;
+
+              padding: 0px 0;
+            }
           }
         }
       }
