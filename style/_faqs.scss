@@ -1,13 +1,18 @@
 .faqs {
   background: #f9fafb;
   padding: 70px 0;
+  z-index: 99999;
 
   .faqs-cont {
     max-width: 1280px;
     width: 95%;
     margin: auto;
+    z-index: 99999;
+
     .content {
       text-align: center;
+      position: relative;
+      z-index: 99999;
 
       h2 {
         font-family: "Newsreader";
@@ -17,6 +22,7 @@
         line-height: 49px;
         color: #0f437f;
         padding: 20px;
+        z-index: 99999;
       }
       p {
         font-family: "Kumbh Sans";

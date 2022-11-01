@@ -1,5 +1,7 @@
 .about {
-  padding: 70px 0;
+  padding: 40px 0;
+  background: white;
+  z-index: 999999;
 
   .about-cont {
     max-width: 1280px;
@@ -9,12 +11,30 @@
 
     .content-header {
       h2 {
+        text-align: center;
         font-family: "Newsreader";
         font-style: normal;
         font-weight: 600;
-        font-size: 38px;
+        font-size: 3rem;
         line-height: 49px;
         text-align: center;
+        line-height: 30px;
+        margin-bottom: 10px;
+      }
+
+      .brand {
+        font-family: "DM Sans";
+        font-style: normal;
+        font-weight: 900;
+        font-size: 2.2rem;
+        line-height: 30px;
+        font-size: 38px;
+        font-size: 3rem;
+        margin-bottom: 12px;
+        // color: rgb(255, 255, 255);
+        span {
+          font-weight: 100;
+        }
       }
       p {
         width: 60%;

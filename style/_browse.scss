@@ -1,21 +1,34 @@
 .browse {
-  padding: 10px 0;
+  padding: 10px 0 10px;
   // background: white;
   position: relative;
-  z-index: 99;
-  top: -100px;
-
+  z-index: 999999;
+  top: -140px;
+  margin-bottom: -60px;
+  .bg-bottom {
+    position: absolute;
+    height: 200px;
+    top: -10px;
+    left: 0;
+    transform: translateY(50%);
+    width: 100%;
+    z-index: -2;
+    background: rgb(255, 255, 255);
+  }
   .browse-cont {
     max-width: 1280px;
     margin: auto;
     padding: 0 10px;
-
+    position: relative;
     h2 {
       text-align: center;
       padding: 10px 0;
       // margin-bottom: 30px;
     }
+
     .cards {
+      // position: absolute;
+      top: -100px;
       padding: 0 20px;
       // display: flex;
       // align-items: center;
@@ -99,8 +112,19 @@
     // background: white;
     position: relative;
     z-index: 99;
-    top: -100px;
-
+    // top: -100px;
+    z-index: 999999;
+    top: -140px;
+    .bg-bottom {
+      position: absolute;
+      height: 200px;
+      top: -10px;
+      left: 0;
+      transform: translateY(50%);
+      width: 100%;
+      z-index: -2;
+      background: rgb(255, 255, 255);
+    }
     .browse-cont {
       max-width: 1280px;
       margin: auto;

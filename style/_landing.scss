@@ -26,12 +26,12 @@
   }
   .pastel {
     position: absolute;
-    height: 440px;
-    width: 440px;
+    height: 300px;
+    width: 300px;
     background-color: #f99d77;
     border-radius: 50%;
     transform: translate(-50%, 50%);
-    z-index: -3;
+    z-index: -39;
     bottom: 0;
     left: 0;
   }
@@ -57,6 +57,7 @@
     padding-bottom: 50px;
     .landing-left {
       width: 60%;
+      margin: auto;
       padding-bottom: 40px;
       .content {
         padding: 10px;
@@ -150,8 +151,8 @@
     }
     .pastel {
       position: absolute;
-      height: 440px;
-      width: 440px;
+      height: 300px;
+      width: 300px;
       background-color: #f99d77;
       border-radius: 50%;
       transform: translate(-50%, 50%);
@@ -231,24 +232,24 @@
           }
         }
       }
-      .landing-right {
-        width: 40%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
-        img {
-          // background: rgb(30, 61, 96);
+      // .landing-right {
+      //   width: 40%;
+      //   display: flex;
+      //   align-items: center;
+      //   justify-content: center;
+      //   padding: 10px;
+      //   img {
+      //     // background: rgb(30, 61, 96);
 
-          width: 100%;
-          border-radius: 14px;
-          transform: rotate(12deg);
-          box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.2);
-          box-shadow: 0 1px 3px rgba(30, 61, 96, 0.12),
-            0 1px 2px rgba(30, 61, 96, 0.24);
-          // height: 550px;
-        }
-      }
+      //     width: 100%;
+      //     border-radius: 14px;
+      //     transform: rotate(12deg);
+      //     box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.2);
+      //     box-shadow: 0 1px 3px rgba(30, 61, 96, 0.12),
+      //       0 1px 2px rgba(30, 61, 96, 0.24);
+      //     // height: 550px;
+      //   }
+      // }
     }
   }
 }
@@ -275,8 +276,8 @@
     }
     .pastel {
       position: absolute;
-      height: 440px;
-      width: 440px;
+      height: 300px;
+      width: 300px;
       background-color: #f99d77;
       border-radius: 50%;
       transform: translate(-50%, 50%);

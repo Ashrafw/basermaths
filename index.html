@@ -9,7 +9,6 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style/style.css" />
-
     <title>BaserMaths</title>
   </head>
   <body class="bodymain">
@@ -79,18 +78,18 @@
             </div>
           </div>
         </div>
-        <div class="landing-right">
-          <!-- <img src="images/maths.jpg" alt="" /> -->
-          <!-- <img src="images/maths2.jpg" alt="" /> -->
-          <img src="images/maths3.jpg" alt="" />
-          <!-- <img src="images/maths4.jpg" alt="" /> -->
-        </div>
+        <!-- <div class="landing-right"> -->
+        <!-- <img src="images/maths.jpg" alt="" /> -->
+        <!-- <img src="images/maths2.jpg" alt="" /> -->
+        <!-- <img src="images/maths3.jpg" alt="" /> -->
+        <!-- <img src="images/maths4.jpg" alt="" /> -->
+        <!-- </div> -->
       </div>
     </div>
     <div class="browse" id="courses">
       <div class="browse-cont">
         <!-- <h2>Browse our courses by category</h2> -->
-
+        <div class="bh-top"></div>
         <div class="cards">
           <div class="card card-one card-blue">
             <div class="image light-blue">
@@ -131,6 +130,7 @@
           </div>
         </div>
       </div>
+      <div class="bg-bottom"></div>
     </div>
     <!-- Popular courses -->
     <!-- <div class="mission">
@@ -267,7 +267,10 @@
     <div class="about" id="about">
       <div class="about-cont">
         <div class="content-header">
-          <h2>About Education</h2>
+          <div class="">
+            <h2>About</h2>
+            <h2 class="brand">baser<span>maths</span></h2>
+          </div>
           <p>
             I offer maths tuition for ambitious students of all levels. All
             lessons are taught with a tailored approach to each student’s needs.
@@ -341,15 +344,15 @@
         <div class="prices-inner">
           <h2>Prices</h2>
           <div class="cards">
-            <div class="card">
-              <h3>KS2</h3>
+            <div class="card blue-col">
+              <h3>KS3</h3>
               <div class="sub-content">
                 <p>starting from</p>
                 <h4>£35</h4>
                 <p>per hour</p>
               </div>
             </div>
-            <div class="card">
+            <div class="card yellow-col">
               <h3>KS3/GCSE</h3>
               <div class="sub-content">
                 <p>starting from</p>
@@ -357,7 +360,7 @@
                 <p>per hour</p>
               </div>
             </div>
-            <div class="card">
+            <div class="card pastel-col">
               <h3>A Levels</h3>
               <div class="sub-content">
                 <p>starting from</p>
@@ -432,8 +435,7 @@
               and helped me achieve grade 9 in maths."
             </p>
             <div class="who">
-              <h5>Katherine Cole</h5>
-              <p>GCSE student's parent</p>
+              <h5>CSE student's parent</h5>
             </div>
           </div>
           <div class="card">
@@ -449,8 +451,7 @@
               Basermaths."
             </p>
             <div class="who">
-              <h5>Katherine Cole</h5>
-              <p>A Level student</p>
+              <h5>A Level student</h5>
             </div>
           </div>
           <div class="card">
@@ -466,8 +467,7 @@
               moved up to top set in maths."
             </p>
             <div class="who">
-              <h5>Katherine Cole</h5>
-              <p>A Level student</p>
+              <h5>A Level student</h5>
             </div>
           </div>
           <div class="card">
@@ -483,8 +483,8 @@
               much! "
             </p>
             <div class="who">
-              <h5>Katherine Cole</h5>
-              <p>GCSE student</p>
+              <h5>GCSE student</h5>
+              <!-- <p>GCSE student</p> -->
             </div>
           </div>
         </div>
@@ -492,12 +492,12 @@
     </div>
 
     <div class="contact-us" id="contactus">
+      <div class="yellow"></div>
+      <div class="pastel"></div>
+      <div class="light-blue"></div>
       <div class="contact-us-cont">
-        <div class="yellow"></div>
-        <div class="pastel"></div>
-        <div class="light-blue"></div>
         <div class="header">
-          <h1>Get in touch!</h1>
+          <h1>Get in touch and <span>enrol</span> today.</h1>
           <h2>Parent/guardian details</h2>
           <!-- <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias rem
@@ -512,8 +512,8 @@
               enctype="multipart/form-data"
             >
               <div class="items">
-                <label
-                  >First Name
+                <label>
+                  <div class="title">First Name <span>*</span></div>
                   <input
                     class="input-message"
                     type="text"
@@ -521,16 +521,18 @@
                     placeholder="First name"
                     required
                 /></label>
-                <label
-                  >Last Name
+                <label>
+                  <div class="title">Last Name</div>
+
                   <input
                     class="input-message"
                     type="text"
                     name="last name"
                     placeholder="Last name"
                 /></label>
-                <label
-                  >Email Address
+                <label>
+                  <div class="title">Email Address <span>*</span></div>
+
                   <input
                     type="email"
                     name="email"
@@ -544,7 +546,6 @@
                     type="text"
                     name="number"
                     placeholder="e.g. 07921 121 121"
-                    required
                   />
                 </label>
                 <label
@@ -564,14 +565,15 @@
                     required
                   />
                 </label> -->
-                <label
-                  >Year group
+                <label>
+                  <div class="title">Year group <span>*</span></div>
+
                   <!-- <input
                     type="text"
                     name="number"
                     placeholder="Tuition enquire"
                   /> -->
-                  <select name="year" id="year">
+                  <select name="year" id="year" required>
                     <option class="first-option">Select your option</option>
                     <option value="year">Year 1</option>
                     <option value="year">Year 2</option>
@@ -590,8 +592,8 @@
                 </label>
               </div>
               <div class="textarea">
-                <label
-                  >Message
+                <label>
+                  <div class="title">Message<span>*</span></div>
                   <textarea
                     name="message"
                     placeholder="Enquiries: please write your message here."
@@ -743,7 +745,7 @@
         </div> -->
 
         <div class="bottom">
-          <p>Copyright © basermath | Grow your skills</p>
+          <p>Copyright © basermaths | Grow your skills</p>
           <div class="socials">
             <!-- <i class="fa-brands fa-linkedin-in"></i> -->
             <i class="fa-brands fa-twitter"></i>
