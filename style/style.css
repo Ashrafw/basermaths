@@ -98,13 +98,47 @@ p.small {
 
 nav {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23), 0 2px 4px rgba(255, 255, 255, 0.908);
+  z-index: 9999999;
   position: fixed;
-  padding: 30px 0;
-  margin-bottom: 20px;
   width: 100%;
+  margin-bottom: 20px;
+}
+nav .nav-pos {
+  padding: 30px 0;
   color: rgb(255, 255, 255);
   background-color: rgb(30, 61, 96);
-  z-index: 9999999;
+  position: relative;
+}
+nav .nav-pos .modal {
+  display: none;
+  position: absolute;
+  top: 90px;
+  right: 0;
+  padding: 20px 0;
+  background: rgb(30, 61, 96);
+  width: 360px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23), 0 2px 4px rgba(255, 255, 255, 0.908);
+}
+nav .nav-pos .modal .modal-links {
+  list-style: none;
+}
+nav .nav-pos .modal .modal-links hr {
+  margin: 0 auto;
+  width: 100%;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+nav .nav-pos .modal .modal-links a {
+  padding: 20px 40px;
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+nav .nav-pos .modal .modal-links a:hover {
+  background: #e1edfb;
+  color: #1e3d60;
 }
 nav .nav-cont {
   max-width: 1280px;
@@ -135,6 +169,12 @@ nav .nav-cont .nav-links {
   justify-content: space-between;
   align-items: center;
 }
+nav .nav-cont .nav-links .nav-bars {
+  display: none;
+}
+nav .nav-cont .nav-links .nav-item {
+  display: block;
+}
 nav .nav-cont .nav-links a {
   text-decoration: none;
   font-family: "Kumbh Sans";
@@ -148,7 +188,141 @@ nav .nav-cont .nav-links a {
 nav .nav-cont .nav-links a:hover {
   color: #f99d77;
 }
-
+@media (max-width: 650px) {
+  nav {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  nav .nav-pos {
+    padding: 30px 0;
+    color: rgb(255, 255, 255);
+    background-color: rgb(30, 61, 96);
+    position: relative;
+    transition: all 0.5s ease-in-out;
+  }
+  nav .nav-pos .modal {
+    display: none;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    padding: 20px 0;
+    background: rgb(30, 61, 96);
+    width: 360px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23), 0 2px 4px rgba(255, 255, 255, 0.908);
+  }
+  nav .nav-pos .modal .modal-links {
+    list-style: none;
+  }
+  nav .nav-pos .modal .modal-links hr {
+    margin: 0 auto;
+    width: 100%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+  }
+  nav .nav-pos .modal .modal-links a {
+    padding: 20px 40px;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+  nav .nav-pos .modal .modal-links a:hover {
+    background: #e1edfb;
+    color: #1e3d60;
+  }
+  nav .nav-pos .modal.active {
+    display: block;
+  }
+  nav .nav-cont {
+    max-width: 1280px;
+    margin: auto;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav .nav-cont .brand {
+    line-height: 30px;
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2.2rem;
+    line-height: 30px;
+    color: rgb(255, 255, 255);
+  }
+  nav .nav-cont .brand span {
+    font-weight: 100;
+  }
+  nav .nav-cont ul {
+    list-style: none;
+  }
+  nav .nav-cont .nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav .nav-cont .nav-links .nav-bars {
+    cursor: pointer;
+    display: block;
+  }
+  nav .nav-cont .nav-links .nav-item {
+    display: none;
+  }
+  nav .nav-cont .nav-links a {
+    font-size: 1.8rem;
+    line-height: 20px;
+    margin-right: 20px;
+  }
+  nav .nav-cont .nav-links a:hover {
+    color: #f99d77;
+  }
+  nav .nav-cont .nav-links a .fa-solid {
+    display: none;
+  }
+  nav .nav-cont .nav-links a .fa-x.active {
+    display: inline;
+  }
+  nav .nav-cont .nav-links a .fa-bars.active {
+    display: inline;
+  }
+}
+@media (max-width: 60px) {
+  nav {
+    padding: 30px 0;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  nav .nav-cont {
+    max-width: 1280px;
+    margin: auto;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav .nav-cont .brand {
+    font-size: 2rem;
+    line-height: 30px;
+  }
+  nav .nav-cont .brand span {
+    font-weight: 100;
+  }
+  nav .nav-cont ul {
+    list-style: none;
+  }
+  nav .nav-cont .nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav .nav-cont .nav-links a {
+    font-size: 1.1rem;
+    margin-left: 30px;
+  }
+}
 .landing {
   position: relative;
   height: 100vh;
@@ -1171,9 +1345,10 @@ nav .nav-cont .nav-links a:hover {
   font-size: 2rem;
 }
 .contact-us .contact-us-cont .contact-section {
-  margin: 20px 40px;
+  margin-top: 20px;
   z-index: 9;
   gap: 90px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1324,63 +1499,126 @@ nav .nav-cont .nav-links a:hover {
   border: none;
   margin-right: 0;
 }
-.contact-us .contact-us-cont .contact-section .in-touch {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  gap: 30px;
-}
-.contact-us .contact-us-cont .contact-section .in-touch .card {
-  width: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 10px;
-  padding: 20px 16px;
-  background-color: white;
-  box-shadow: 0 5px 15px hsla(0deg, 0%, 0%, 0.2);
-  border-radius: 14px;
-}
-.contact-us .contact-us-cont .contact-section .in-touch .card h5 {
-  font-family: "Kumbh Sans";
-  font-style: normal;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-  /* or 111% */
-  text-align: center;
-  /* Neutral/700 */
-  color: #1e3d60;
-}
-.contact-us .contact-us-cont .contact-section .in-touch .card p {
-  font-family: "Kumbh Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
-  /* or 167% */
-  text-align: center;
-  /* Neutral/500 */
-  color: #8096b0;
-}
-.contact-us .contact-us-cont .contact-section .in-touch .card img {
-  width: 50px;
-}
-.contact-us .contact-us-cont .contact-section .in-touch .card .image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #e1edfb;
-  padding: 10px 10px;
-  border-radius: 50%;
-}
-.contact-us .contact-us-cont .contact-section .in-touch .card .image img {
-  width: 25px;
-}
 
+@media (max-width: 760px) {
+  .contact-us {
+    padding: 60px 0;
+    overflow: hidden;
+  }
+  .contact-us .contact-us-cont {
+    max-width: 1280px;
+    width: 95%;
+    margin: auto;
+    padding: 30px 0;
+    position: relative;
+  }
+  .contact-us .contact-us-cont .light-blue {
+    position: absolute;
+    height: 350px;
+    width: 350px;
+    background-color: #e1edfb;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    top: 0;
+    left: 0;
+  }
+  .contact-us .contact-us-cont .yellow {
+    position: absolute;
+    width: 410px;
+    height: 410px;
+    background: #fcdf69;
+    border-radius: 50%;
+    z-index: -1;
+    top: 30%;
+    right: 0;
+    transform: translate(30%, -30%);
+  }
+  .contact-us .contact-us-cont .pastel {
+    position: absolute;
+    height: 380px;
+    width: 380px;
+    background-color: #f99d77;
+    border-radius: 50%;
+    transform: translate(-50%, 50%);
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+  }
+  .contact-us .contact-us-cont .header {
+    margin: 40px 40px 0px;
+  }
+  .contact-us .contact-us-cont .header h1 {
+    font-size: 2.9rem;
+  }
+  .contact-us .contact-us-cont .header h2 {
+    margin: 30px 0 0px;
+    font-size: 1.8rem;
+  }
+  .contact-us .contact-us-cont .contact-section {
+    margin-top: 20px;
+    z-index: 9;
+    gap: 90px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .contact-us .contact-us-cont .contact-section .contact-form {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 40px 40px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px hsla(0deg, 0%, 0%, 0.2);
+  }
+  .contact-us .contact-us-cont .contact-section .contact-form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+  }
+  .contact-us .contact-us-cont .contact-section .contact-form form .items {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 20px 35px;
+  }
+  .contact-us .contact-us-cont .contact-section .contact-form form .items label {
+    display: flex;
+    flex-direction: column;
+    font-family: "Kumbh Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    color: #1e3d60;
+  }
+  .contact-us .contact-us-cont .contact-section .contact-form form .items label input {
+    margin: 10px 0;
+    background: #f9fafb;
+    border-radius: 14px;
+    padding: 10px 20px;
+    box-shadow: 0 1px 3px hsla(0deg, 0%, 0%, 0.2);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: #62778f;
+    border: none;
+  }
+  .contact-us .contact-us-cont .contact-section .contact-form form .items label input::-moz-placeholder {
+    color: #62778f;
+    opacity: 0.5; /* Firefox */
+  }
+  .contact-us .contact-us-cont .contact-section .contact-form form .items label input:-ms-input-placeholder {
+    color: #62778f;
+    opacity: 0.5; /* Firefox */
+  }
+  .contact-us .contact-us-cont .contact-section .contact-form form .items label input::placeholder {
+    color: #62778f;
+    opacity: 0.5; /* Firefox */
+  }
+}
 .faqs {
   background: #f9fafb;
   padding: 70px 0;

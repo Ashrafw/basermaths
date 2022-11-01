@@ -34,6 +34,34 @@ nav.addEventListener(
   // { passive: true }
 );
 nav.addEventListener("scroll", console.log("scrolled"));
+
+const menuBurger = document.querySelector(".fa-bars");
+const menuClose = document.querySelector(".fa-x");
+const modalMenu = document.querySelector(".modal");
+const navModalLinks = document.querySelectorAll(".modal-nav-links");
+
+menuBurger.addEventListener("click", menuBarClicked);
+menuClose.addEventListener("click", menuCloseClicked);
+navModalLinks.forEach((link) => {
+  link.addEventListener("click", menuCloseClicked);
+});
+
+function menuBarClicked() {
+  modalMenu.classList.add("active");
+  menuClose.classList.add("active");
+  menuBurger.classList.remove("active");
+}
+function menuCloseClicked() {
+  modalMenu.classList.remove("active");
+  menuClose.classList.remove("active");
+  menuBurger.classList.add("active");
+}
+
+window.addEventListener("resize", (e) => {
+  if (window.innerWidth > 650) {
+    menuCloseClicked();
+  }
+});
 // const observer = new IntersectionObserver((entries) => {
 //   entries.forEach((entry) => {
 //     console.log(entry.target.classList);
