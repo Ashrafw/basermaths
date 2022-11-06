@@ -1235,7 +1235,6 @@ nav .nav-cont .nav-links a:hover {
   }
   .prices .prices-cont .prices-inner .cards .card {
     padding: 30px;
-    border-radius: 12px;
   }
   .prices .prices-cont .prices-inner .cards .card h3 {
     font-size: 1.8rem;
@@ -1284,7 +1283,6 @@ nav .nav-cont .nav-links a:hover {
   }
   .prices .prices-cont .prices-inner .cards .card {
     padding: 25px;
-    border-radius: 12px;
     width: 240px;
   }
   .prices .prices-cont .prices-inner .cards .card h3 {
@@ -1334,7 +1332,6 @@ nav .nav-cont .nav-links a:hover {
   }
   .prices .prices-cont .prices-inner .cards .card {
     padding: 8px 15px;
-    border-radius: 12px;
     width: 180px;
   }
   .prices .prices-cont .prices-inner .cards .card h3 {
