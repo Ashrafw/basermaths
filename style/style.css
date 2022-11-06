@@ -1144,7 +1144,7 @@ nav .nav-cont .nav-links a:hover {
   }
 }
 .prices {
-  padding: 70px 0;
+  padding: 80px 0 120px;
   background: #1e3d60;
   position: relative;
 }
@@ -1163,7 +1163,8 @@ nav .nav-cont .nav-links a:hover {
 }
 .prices .prices-cont .prices-inner h2 {
   text-align: center;
-  padding: 0 0 30px;
+  padding: 0 0 120px;
+  font-size: 3rem;
   color: rgb(255, 255, 255);
 }
 .prices .prices-cont .prices-inner .cards {
@@ -1172,28 +1173,33 @@ nav .nav-cont .nav-links a:hover {
   gap: 60px;
 }
 .prices .prices-cont .prices-inner .cards .card {
-  padding: 30px;
+  padding: 10px;
+  border-radius: 12px;
   text-align: center;
   box-shadow: 0 5px 15px hsla(0deg, 0%, 0%, 0.2);
 }
 .prices .prices-cont .prices-inner .cards .card h3 {
   font-size: 2rem;
   margin-bottom: 30px;
-  padding: 8px 0;
-  background-color: white;
-  background: rgb(245, 245, 245);
+  padding: 20px 0 10px;
+  border-radius: 12px;
 }
 .prices .prices-cont .prices-inner .cards .card .sub-content {
-  background: rgb(245, 245, 245);
-  box-shadow: 0 5px 15px hsla(0deg, 0%, 0%, 0.2);
-  padding: 35px 0;
+  border-radius: 12px;
+  padding: 65px 0 80px;
 }
 .prices .prices-cont .prices-inner .cards .card .sub-content p {
+  display: inline-block;
   font-size: 1.2rem;
+  color: rgb(255, 255, 255);
 }
 .prices .prices-cont .prices-inner .cards .card .sub-content h4 {
-  font-size: 2rem;
+  font-size: 4.4rem;
+  font-weight: 700;
   padding: 20px 0;
+}
+.prices .prices-cont .prices-inner .cards .card .sub-content h4 span {
+  font-size: 1.4rem;
 }
 .prices .prices-cont .prices-inner .cards .blue-col {
   background-color: #e1edfb;
