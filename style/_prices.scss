@@ -28,7 +28,7 @@
         // align-items: center;
         gap: 60px;
         .card {
-          padding: 10px;
+          padding: 10px 10px 20px;
           border-radius: 12px;
           text-align: center;
           box-shadow: 0 5px 15px hsla(0, 0%, 0%, 0.2);
@@ -110,21 +110,21 @@
           // align-items: center;
           gap: 40px;
           .card {
-            padding: 30px;
+            padding: 25px 20px 40px;
             // border-radius: 12px;
 
             h3 {
               // color: rgb(255, 255, 255);
-              font-size: 1.8rem;
+              font-size: 1.9rem;
               margin-bottom: 30px;
             }
             .sub-content {
               padding: 35px 0;
               p {
-                font-size: 1.2rem;
+                font-size: 1.8rem;
               }
               h4 {
-                font-size: 2rem;
+                font-size: 3rem;
                 padding: 20px 0;
               }
             }
@@ -165,7 +165,7 @@
           align-items: center;
           gap: 25px;
           .card {
-            padding: 25px;
+            padding: 25px 25px 35px;
             // border-radius: 12px;
             width: 240px;
             h3 {
@@ -220,7 +220,7 @@
           align-items: center;
           gap: 20px;
           .card {
-            padding: 8px 15px;
+            padding: 8px 15px 30px;
             // border-radius: 12px;
             width: 180px;
             h3 {

@@ -96,6 +96,24 @@ p.small {
   color: #62778f;
 }
 
+.above-about {
+  width: 100%;
+  height: 60px;
+  width: 100%;
+  margin: 0;
+}
+
+.about-new-ash {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
 nav {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23), 0 2px 4px rgba(255, 255, 255, 0.908);
   z-index: 9999999;
@@ -340,30 +358,30 @@ nav .nav-cont .nav-links a:hover {
 }
 .landing .yellow {
   position: absolute;
-  height: 440px;
-  width: 440px;
+  height: 340px;
+  width: 340px;
   background-color: #fcdf69;
   border-radius: 50%;
-  transform: translate(50%, -50%);
+  transform: translate(60%, -50%);
   z-index: -3;
-  top: 0;
+  top: 40%;
   right: 0;
 }
 .landing .pastel {
   position: absolute;
-  height: 300px;
-  width: 300px;
+  height: 400px;
+  width: 400px;
   background-color: #f99d77;
   border-radius: 50%;
-  transform: translate(-50%, 50%);
+  transform: translate(-50%, 30%);
   z-index: -39;
   bottom: 0;
   left: 0;
 }
 .landing .blue {
   position: absolute;
-  height: 440px;
-  width: 440px;
+  height: 420px;
+  width: 420px;
   background-color: #e1edfb;
   border-radius: 50%;
   transform: translate(-50%, -50%);
@@ -463,6 +481,14 @@ nav .nav-cont .nav-links a:hover {
     z-index: -3;
     top: 0;
     right: 0;
+    height: 340px;
+    width: 340px;
+    background-color: #fcdf69;
+    border-radius: 50%;
+    transform: translate(60%, -50%);
+    z-index: -3;
+    top: 40%;
+    right: 0;
   }
   .landing .pastel {
     position: absolute;
@@ -556,13 +582,13 @@ nav .nav-cont .nav-links a:hover {
   }
   .landing .yellow {
     position: absolute;
-    height: 440px;
-    width: 440px;
+    height: 340px;
+    width: 340px;
     background-color: #fcdf69;
     border-radius: 50%;
-    transform: translate(50%, -50%);
+    transform: translate(60%, -50%);
     z-index: -3;
-    top: 0;
+    top: 40%;
     right: 0;
   }
   .landing .pastel {
@@ -673,13 +699,13 @@ nav .nav-cont .nav-links a:hover {
   }
   .landing .yellow {
     position: absolute;
-    height: 340px;
-    width: 340px;
+    height: 280px;
+    width: 280px;
     background-color: #fcdf69;
     border-radius: 50%;
-    transform: translate(50%, -50%);
+    transform: translate(60%, -50%);
     z-index: -3;
-    top: 0;
+    top: 40%;
     right: 0;
   }
   .landing .pastel {
@@ -972,7 +998,7 @@ nav .nav-cont .nav-links a:hover {
 }
 
 .about {
-  padding: 40px 0;
+  padding: 40px 0 40px;
   background: white;
   z-index: 999999;
 }
@@ -1173,7 +1199,7 @@ nav .nav-cont .nav-links a:hover {
   gap: 60px;
 }
 .prices .prices-cont .prices-inner .cards .card {
-  padding: 10px;
+  padding: 10px 10px 20px;
   border-radius: 12px;
   text-align: center;
   box-shadow: 0 5px 15px hsla(0deg, 0%, 0%, 0.2);
@@ -1240,20 +1266,20 @@ nav .nav-cont .nav-links a:hover {
     gap: 40px;
   }
   .prices .prices-cont .prices-inner .cards .card {
-    padding: 30px;
+    padding: 25px 20px 40px;
   }
   .prices .prices-cont .prices-inner .cards .card h3 {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     margin-bottom: 30px;
   }
   .prices .prices-cont .prices-inner .cards .card .sub-content {
     padding: 35px 0;
   }
   .prices .prices-cont .prices-inner .cards .card .sub-content p {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
   .prices .prices-cont .prices-inner .cards .card .sub-content h4 {
-    font-size: 2rem;
+    font-size: 3rem;
     padding: 20px 0;
   }
 }
@@ -1288,7 +1314,7 @@ nav .nav-cont .nav-links a:hover {
     gap: 25px;
   }
   .prices .prices-cont .prices-inner .cards .card {
-    padding: 25px;
+    padding: 25px 25px 35px;
     width: 240px;
   }
   .prices .prices-cont .prices-inner .cards .card h3 {
@@ -1337,7 +1363,7 @@ nav .nav-cont .nav-links a:hover {
     gap: 20px;
   }
   .prices .prices-cont .prices-inner .cards .card {
-    padding: 8px 15px;
+    padding: 8px 15px 30px;
     width: 180px;
   }
   .prices .prices-cont .prices-inner .cards .card h3 {
