@@ -4,6 +4,7 @@
   // overflow: hidden;
   //   z-index: -2;
   position: relative;
+  // overflow-x: hidden;
 
   .light-blue {
     position: absolute;
@@ -56,6 +57,7 @@
         span {
           color: #f99d77;
         }
+        line-height: 1.2;
       }
 
       h2 {

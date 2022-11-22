@@ -8,11 +8,11 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body {
   font-family: "Kumbh Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -1012,7 +1012,7 @@ nav .nav-cont .nav-links a:hover {
   text-align: center;
   font-family: "Newsreader";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 3rem;
   line-height: 49px;
   text-align: center;
@@ -1932,6 +1932,9 @@ nav .nav-cont .nav-links a:hover {
   margin: 40px 40px 0px;
   position: relative;
   z-index: 1000000;
+}
+.contact-us .contact-us-cont .header h1 {
+  line-height: 1.2;
 }
 .contact-us .contact-us-cont .header h1 span {
   color: #f99d77;
