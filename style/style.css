@@ -12,7 +12,6 @@ html {
 
 body {
   font-family: "Kumbh Sans", sans-serif;
-  width: 100vw;
   overflow-x: hidden;
 }
 
@@ -349,6 +348,7 @@ nav .nav-cont .nav-links a:hover {
   padding: 140px 0 30px;
   background: #f9fafb;
   z-index: 1;
+  overflow: hidden;
 }
 .landing .arrow {
   position: absolute;
@@ -1011,9 +1011,9 @@ nav .nav-cont .nav-links a:hover {
 }
 .about .about-cont .content-header h2 {
   text-align: center;
-  font-family: "Newsreader";
+  font-family: "DM Sans";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 3rem;
   line-height: 49px;
   text-align: center;
@@ -1888,6 +1888,7 @@ nav .nav-cont .nav-links a:hover {
 .contact-us {
   padding: 60px 0;
   position: relative;
+  overflow: hidden;
 }
 .contact-us .light-blue {
   position: absolute;
