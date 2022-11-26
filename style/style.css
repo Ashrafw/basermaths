@@ -1302,6 +1302,7 @@ nav .nav-cont .nav-links a:hover {
   bottom: 0;
   left: 50%;
   width: 60px;
+  z-index: 99999;
   transform: translateY(50%);
 }
 .prices .prices-cont {
@@ -1490,7 +1491,7 @@ nav .nav-cont .nav-links a:hover {
     width: 180px;
   }
   .prices .prices-cont .prices-inner .cards .card h3 {
-    font-size: 1.4rem;
+    font-size: 1.41rem;
     margin-bottom: 14px;
   }
   .prices .prices-cont .prices-inner .cards .card .sub-content {
@@ -1500,7 +1501,7 @@ nav .nav-cont .nav-links a:hover {
     font-size: 1.1rem;
   }
   .prices .prices-cont .prices-inner .cards .card .sub-content h4 {
-    font-size: 1.8rem;
+    font-size: 1.84rem;
     padding: 6px 0;
   }
 }
@@ -1617,6 +1618,18 @@ nav .nav-cont .nav-links a:hover {
 .review {
   background: #f9fafb;
   padding: 70px 0;
+  position: relative;
+}
+.review .light-blue {
+  position: absolute;
+  height: 350px;
+  width: 350px;
+  background-color: #e1edfb;
+  border-radius: 50%;
+  transform: translate(-50%, 50%);
+  z-index: 1000;
+  bottom: 0;
+  left: 0;
 }
 .review .review-cont {
   max-width: 1280px;
@@ -2011,17 +2024,7 @@ nav .nav-cont .nav-links a:hover {
   padding: 60px 0;
   position: relative;
   overflow: hidden;
-}
-.contact-us .light-blue {
-  position: absolute;
-  height: 350px;
-  width: 350px;
-  background-color: #e1edfb;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  top: 0;
-  left: 0;
+  z-index: 99999;
 }
 .contact-us .yellow {
   position: absolute;
@@ -2034,17 +2037,6 @@ nav .nav-cont .nav-links a:hover {
   right: 0;
   transform: translate(30%, -30%);
 }
-.contact-us .pastel {
-  position: absolute;
-  height: 300px;
-  width: 300px;
-  background-color: #f99d77;
-  border-radius: 50%;
-  transform: translate(-50%, 50%);
-  z-index: 1;
-  bottom: 0;
-  left: 0;
-}
 .contact-us .contact-us-cont {
   max-width: 1280px;
   width: 95%;
@@ -2056,6 +2048,7 @@ nav .nav-cont .nav-links a:hover {
   margin: 40px 40px 0px;
   position: relative;
   z-index: 1000000;
+  z-index: 99999;
 }
 .contact-us .contact-us-cont .header h1 {
   line-height: 1.2;
@@ -2324,7 +2317,19 @@ nav .nav-cont .nav-links a:hover {
 .faqs {
   background: #f9fafb;
   padding: 70px 0;
-  z-index: 99999;
+  z-index: 99;
+  position: relative;
+}
+.faqs .pastel {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  background-color: #f99d77;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -91;
+  top: 0;
+  left: 0;
 }
 .faqs .faqs-cont {
   max-width: 1280px;
